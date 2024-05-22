@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "name": "sdk",
+      "path": "../sdk/src"
+    },
+    // {
+    //   "name": "CliNext SDK",
+    //   "path": "../../clinext/sdk/src"
+    // }
+  ],
+  "settings": {
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#0F332B",
+      "titleBar.activeBackground": "#15483C",
+      "titleBar.activeForeground": "#F5FCFB"
+    }
+  }
+}
