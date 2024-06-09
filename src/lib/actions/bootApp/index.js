@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 
 export default async (props) => {
@@ -13,7 +13,7 @@ export default async (props) => {
     toolbox.fs.copyTpl(toolbox.templatePath('README.md'), toolbox.destinationPath('README.md'), payload)
     toolbox.fs.copyTpl(toolbox.templatePath('package.json'), toolbox.destinationPath('package.json'), payload)
     toolbox.fs.copyTpl(toolbox.templatePath('lib/app/index.json'), toolbox.destinationPath('lib/app/index.json'), payload)
-    toolbox.fs.copyTpl(toolbox.templatePath('mastermail.config.js'), toolbox.destinationPath('mastermail.config.js'), payload)
+    toolbox.fs.copyTpl(toolbox.templatePath('notifiles.config.js'), toolbox.destinationPath('notifiles.config.js'), payload)
     toolbox.fs.copyTpl(toolbox.templatePath('env'), toolbox.destinationPath('.env'), payload)
     toolbox.fs.copyTpl(toolbox.templatePath('Dockerfile'), toolbox.destinationPath('Dockerfile'), payload)
     toolbox.fs.copyTpl(toolbox.templatePath('.dockerignore'), toolbox.destinationPath('.dockerignore'), payload)

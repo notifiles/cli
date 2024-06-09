@@ -1,13 +1,13 @@
-# mastermail CLI
+# notifiles CLI
 
 > [!WARNING]
-> mastermail is still experimental and its api may change in the future.
+> notifiles is still experimental and its api may change in the future.
 
 ![logo](/static/img/icon.png)
 
-[![npm Package](https://img.shields.io/npm/v/toolbox-mastermail.svg?style=flat-square)](https://www.npmjs.org/package/toolbox-mastermail)
-[![NPM Downloads](https://img.shields.io/npm/dm/toolbox-mastermail.svg)](https://npmjs.org/package/toolbox-mastermail)
-[![Build Status](https://github.com/mastermail-community/toolbox-mastermail/actions/workflows/release.yml/badge.svg)](https://github.com/mastermail-community/toolbox-mastermail/actions/tests.yml)
+[![npm Package](https://img.shields.io/npm/v/toolbox-notifiles.svg?style=flat-square)](https://www.npmjs.org/package/toolbox-notifiles)
+[![NPM Downloads](https://img.shields.io/npm/dm/toolbox-notifiles.svg)](https://npmjs.org/package/toolbox-notifiles)
+[![Build Status](https://github.com/notifiles-community/toolbox-notifiles/actions/workflows/release.yml/badge.svg)](https://github.com/notifiles-community/toolbox-notifiles/actions/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -28,7 +28,7 @@ yarn global add authored
 To launch the cli simply type:
 
 ```bash
-mastermail
+notifiles
 ```
 
 ![The command toolbox](/static/img/s1.png)
@@ -37,11 +37,11 @@ mastermail
 
 ```
 Usage:
-  mastermail:app [<destination>] [options]
+  notifiles:app [<destination>] [options]
 
 
 ```
 
 
 
-A full documentation is available at [https://docs.mastermail.app](https://docs.mastermail.app)
+A full documentation is available at [https://docs.notifiles.app](https://docs.notifiles.app)

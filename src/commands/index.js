@@ -1,8 +1,8 @@
 
 export default ({
   _clinextType: 'command',
-  name: 'mastermail',
-  description: 'mastermail CLI ✍️',
+  name: 'notifiles',
+  description: 'notifiles CLI ✍️',
   questions: [
     {
       name: 'quick',

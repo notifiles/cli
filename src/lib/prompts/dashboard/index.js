@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 
 import validateNumber from "../../lib/validateNumber.js"
@@ -15,8 +15,8 @@ export default async (props) => {
 
     toolbox.ui.drawSectionHeader({
         toolbox,
-        title: `mastermail dashboard 🚀`,
-        subTitle: `mastermail dashboard helps you visualize and edit the app's data and configuration.`
+        title: `notifiles dashboard 🚀`,
+        subTitle: `notifiles dashboard helps you visualize and edit the app's data and configuration.`
     })
 
     if (!force) {

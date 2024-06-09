@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 
 
@@ -17,7 +17,7 @@ export default async (props) => {
     toolbox.ui.drawSectionHeader({
         toolbox,
         title: `App database 💿`,
-        subTitle: `mastermail handles both mongodb and PostGreSQL databases.`
+        subTitle: `notifiles handles both mongodb and PostGreSQL databases.`
     })
 
     await askForGeneric({

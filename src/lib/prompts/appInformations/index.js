@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 
 import askForAppName from "./askForAppName.js"
@@ -18,7 +18,7 @@ export default async (props) => {
   toolbox.ui.drawSectionHeader({
     toolbox,
     title: `App informations 🚀`,
-    subTitle: `mastermail required general informations.`
+    subTitle: `notifiles required general informations.`
   })
 
   await askForAppName(props)

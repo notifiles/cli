@@ -1,4 +1,4 @@
-import { post } from "@mastermail/sdk"
+import { post } from "@notifiles/sdk"
 // import { post } from "../../../../sdk/src/index.js"
 
 export default ({

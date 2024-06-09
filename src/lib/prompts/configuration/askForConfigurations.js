@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 /**
 * @param {import('yeoman-toolbox')} toolbox

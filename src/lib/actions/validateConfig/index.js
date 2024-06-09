@@ -1,8 +1,8 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 
-// import { validateFeature } from '@mastermail/tools'
+// import { validateFeature } from '@notifiles/tools'
 
 export default async (props) => {
     const { toolbox, payload } = props
@@ -10,7 +10,7 @@ export default async (props) => {
 
     return { isValid: true, message: null }
     // try {
-    //     const configPath = `${appPath}/mastermail.config.js`
+    //     const configPath = `${appPath}/notifiles.config.js`
     //     const servableConfig = (await import(configPath)).default
     //     // const servableConfig = JSON.parse(configRawdata)
     //     if (!servableConfig) {

@@ -3,7 +3,7 @@ import axios from "axios";
 dotenv.config()
 
 export default async ({ username, password }) => {
-    const baseUrl = 'https://api.registry.servablecommunity.com/mastermail'
+    const baseUrl = 'https://api.registry.servablecommunity.com/notifiles'
     // const baseUrl = 'https://api.registry.servablecommunity.com'
     // const url = `${baseUrl}/searchFeature?searchTerm=${searchTerm}&page=${page}`
     const url = `${baseUrl}/login`

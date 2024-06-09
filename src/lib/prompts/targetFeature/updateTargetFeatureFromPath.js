@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 import path from "path"
 import capitalizeFirstLetter from "../../lib/capitalizeFirstLetter.js"

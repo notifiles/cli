@@ -1,8 +1,8 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 
-// import { documentFeature, ManifestEnums, extractFeature } from '@mastermail/tools'
+// import { documentFeature, ManifestEnums, extractFeature } from '@notifiles/tools'
 import featureIndex from '../../../../../lib/featureIndex.js'
 
 export default async (props) => {

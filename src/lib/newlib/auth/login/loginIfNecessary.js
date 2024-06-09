@@ -27,7 +27,7 @@ export default async () => {
   })
 
   if (!result) {
-    CliNext.print.info(`Could not connect to the mastermail registry. Please try again later`)
+    CliNext.print.info(`Could not connect to the notifiles registry. Please try again later`)
     return false
   }
 

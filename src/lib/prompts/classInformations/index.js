@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 
 import path from "path"
@@ -14,7 +14,7 @@ export default async (props) => {
     toolbox.ui.drawSectionHeader({
         toolbox,
         title: `Class informations 🚀`,
-        subTitle: `mastermail required class informations.`
+        subTitle: `notifiles required class informations.`
     })
 
     const ownClasses = await featureSchemaOwnClasses(payload.targetFeaturePath)

@@ -9,7 +9,7 @@ export default (folder) => {
             return false
         }
 
-        const targetPath = `${folder}/mastermail.config.js`
+        const targetPath = `${folder}/notifiles.config.js`
         const exists = fs.existsSync(targetPath)
         return exists
     } catch (e) {

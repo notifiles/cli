@@ -1,2 +1,2 @@
-export default class _User extends mastermail.App.Object {
+export default class _User extends notifiles.App.Object {
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn mastermail:document
-yarn mastermail:readme
-yarn mastermail:license
+yarn notifiles:document
+yarn notifiles:readme
+yarn notifiles:license

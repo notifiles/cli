@@ -1,7 +1,7 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
-// import { buildSchema } from '@mastermail/tools'
+// import { buildSchema } from '@notifiles/tools'
 
 
 export default async (props) => {
@@ -11,7 +11,7 @@ export default async (props) => {
   const appPath = payload.desiredWriteDestinationPathAbsolute
 
   try {
-    const configPath = `${appPath}/mastermail.config.js`
+    const configPath = `${appPath}/notifiles.config.js`
     const servableConfig = (await import(configPath)).default
     // const servableConfig = JSON.parse(configRawdata)
     if (!servableConfig) {

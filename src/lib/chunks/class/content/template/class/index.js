@@ -1,5 +1,5 @@
 
-export default class <%= className %> extends mastermail.App.Object {
+export default class <%= className %> extends notifiles.App.Object {
     constructor() {
         super('<%= className %>')
     }

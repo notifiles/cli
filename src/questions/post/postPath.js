@@ -2,7 +2,7 @@
 export default ({
   _clinextType: "question",
   type: 'string',
-  message: "Choose a mastermail post",
+  message: "Choose a notifiles post",
   promptType: "file-tree-selection",
   name: "postPath",
   onlyShowDir: true,

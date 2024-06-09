@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 
 
@@ -16,7 +16,7 @@ export default async (props) => {
     toolbox.ui.drawSectionHeader({
         toolbox,
         title: `Distribution ⠕`,
-        subTitle: `mastermail can use an arbiter.`
+        subTitle: `notifiles can use an arbiter.`
     })
 
     await askForGeneric({

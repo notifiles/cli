@@ -1,5 +1,5 @@
 // import { cloud as cloudOps } from "../../../../sdk/src/index.js"
-import { cloud as cloudOps } from "@mastermail/sdk"
+import { cloud as cloudOps } from "@notifiles/sdk"
 
 export default ({
   _clinextType: "command",

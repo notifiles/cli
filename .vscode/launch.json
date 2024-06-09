@@ -19,7 +19,7 @@
         "--projectName",
         "The Dickens in me",
         "--destination",
-        "/Users/anak/YourouNak/development/mastermail/cli/__mock__",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__",
         // "./_archive/main",
         // //"-q"
       ],
@@ -61,7 +61,7 @@
         "--platformId",
         "devto",
         "--projectPath",
-        "/Users/anak/YourouNak/development/mastermail/cli/__mock__/The Dickens in me",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",
@@ -103,7 +103,7 @@
         "platform",
         "list",
         "--projectPath",
-        "/Users/anak/YourouNak/development/mastermail/cli/__mock__/The Dickens in me",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
         // "./_archive/main",
         // //"-q"
       ],
@@ -145,7 +145,7 @@
         "--postTitle",
         "My new hobby is a genuine one",
         "--destination",
-        "/Users/anak/YourouNak/development/mastermail/cli/__mock__/The Dickens in me",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",
@@ -186,7 +186,7 @@
       "args": [
         "sync",
         "--projectPath",
-        "/Users/anak/YourouNak/development/mastermail/cli/__mock__/The Dickens in me",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",
@@ -228,7 +228,7 @@
         "cloud",
         "add",
         "--projectPath",
-        "/Users/anak/YourouNak/development/mastermail/cli/__mock__/The Dickens in me",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",
@@ -269,7 +269,7 @@
       "args": [
         "build",
         "--destination",
-        "/Users/anak/YourouNak/development/mastermail/cli/__mock__/The Dickens in me",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",
@@ -310,7 +310,7 @@
       "args": [
         "consolidate",
         "--destination",
-        "/Users/anak/YourouNak/development/mastermail/cli/__mock__/The Dickens in me",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",
@@ -351,7 +351,7 @@
       "args": [
         "cloudify",
         "--destination",
-        "/Users/anak/YourouNak/development/mastermail/cli/__mock__/The Dickens in me",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",

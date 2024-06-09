@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 
 import validateNumber from "../../lib/validateNumber.js"
@@ -15,7 +15,7 @@ export default async (props) => {
     toolbox.ui.drawSectionHeader({
         toolbox,
         title: `Bucket storage 📂`,
-        subTitle: `mastermail uses a bucket storage for files.`
+        subTitle: `notifiles uses a bucket storage for files.`
     })
 
     if (!force) {

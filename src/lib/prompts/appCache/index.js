@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 
 import askForGeneric from "../utils/askForGeneric.js"
@@ -16,7 +16,7 @@ export default async (props) => {
   toolbox.ui.drawSectionHeader({
     toolbox,
     title: `App redis cache 🚀`,
-    subTitle: `mastermail can launch with a dedicated cache server in REDIS.`
+    subTitle: `notifiles can launch with a dedicated cache server in REDIS.`
   })
 
   if (!force) {

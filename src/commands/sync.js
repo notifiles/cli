@@ -1,4 +1,4 @@
-import { platform, post } from "@mastermail/sdk"
+import { platform, post } from "@notifiles/sdk"
 // import { platform, post } from "../../../sdk/src/index.js"
 
 export default ({
@@ -45,7 +45,7 @@ export default ({
     })
 
     if (!clouds) {
-      console.log('Please add a cloud CDN host. mastermail cloud add')
+      console.log('Please add a cloud CDN host. notifiles cloud add')
       return
     }
     clouds = JSON.parse(clouds)

@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 
 
@@ -15,7 +15,7 @@ export default async (props) => {
   toolbox.ui.drawSectionHeader({
     toolbox,
     title: `Configurations ⚙`,
-    subTitle: `mastermail can be used in a staging or production configurations, or both at the same time.`
+    subTitle: `notifiles can be used in a staging or production configurations, or both at the same time.`
   })
 
   // await askForState(props)

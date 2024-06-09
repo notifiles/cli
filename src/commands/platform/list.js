@@ -1,4 +1,4 @@
-import { platform } from "@mastermail/sdk"
+import { platform } from "@notifiles/sdk"
 
 export default ({
   _clinextType: "command",

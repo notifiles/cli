@@ -1,5 +1,5 @@
 
-// import { cleanFeatures } from '@mastermail/tools'
+// import { cleanFeatures } from '@notifiles/tools'
 
 export default async (props) => {
   const {

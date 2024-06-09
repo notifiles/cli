@@ -54,7 +54,7 @@ export default async () => {
   }
 
   // if (!CliNext.payload.featureEngine) {
-  //   CliNext.payload.featureHomepageUrl = "@mastermail-community/parse-server-engine"
+  //   CliNext.payload.featureHomepageUrl = "@notifiles-community/parse-server-engine"
   // }
 
   if (!CliNext.payload.featureIconUrl) {

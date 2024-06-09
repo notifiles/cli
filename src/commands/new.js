@@ -1,9 +1,9 @@
-import { project } from "@mastermail/sdk"
+import { project } from "@notifiles/sdk"
 
 export default ({
   _clinextType: "command",
   name: 'new',
-  description: 'Create an empty mastermail project ✍️',
+  description: 'Create an empty notifiles project ✍️',
   questions: [
     {
       name: 'projectName',

@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Copyright (C) mastermail Community. All rights reserved.
+ * Copyright (C) notifiles Community. All rights reserved.
  *--------------------------------------------------------*/
 import chalk from "chalk"
 import isFolderProject from "./lib/isFolderProject.js"
@@ -30,7 +30,7 @@ export default async (props) => {
     payload.desiredWriteDestinationPathAbsolute = originalDestinationPath
     payload.desiredWriteDestinationPath = payload.desiredWriteDestinationPathAbsolute.split(path.sep).pop()
 
-    toolbox.log(chalk.italic(`→ No app choice required. The feature will be added mastermail app in the current folder (${payload.appName}).\n`))
+    toolbox.log(chalk.italic(`→ No app choice required. The feature will be added notifiles app in the current folder (${payload.appName}).\n`))
     return
   }
 
@@ -45,7 +45,7 @@ export default async (props) => {
       ...props.options,
       type: "file-tree-selection",
       name: "desiredWriteDestinationPathAbsolute",
-      message: "Choose a mastermail app",
+      message: "Choose a notifiles app",
       onlyShowDir: true,
       root: originalDestinationPath,
       onlyShowValid: true,
@@ -69,7 +69,7 @@ export default async (props) => {
         const _name = name.split(path.sep).pop()
         //const isServable = (_name && _name.length && !['.'].includes(_name[0]))
         const isServable = isFolderProjectSync(name)
-        return isServable ? `${_name} (mastermail project) ` : `${_name} ('N/A')`
+        return isServable ? `${_name} (notifiles project) ` : `${_name} ('N/A')`
       }
     }
   })

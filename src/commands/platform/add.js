@@ -1,4 +1,4 @@
-import { platform } from "@mastermail/sdk"
+import { platform } from "@notifiles/sdk"
 // import { platform } from "../../../../sdk/src/index.js"
 
 export default ({

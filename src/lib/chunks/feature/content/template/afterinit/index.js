@@ -1,9 +1,9 @@
 /**
- * Called after mastermail has launched and the endpoint is available.
+ * Called after notifiles has launched and the endpoint is available.
  * @return {void} Always returns void.
  * @param {Object} app Express app.
  * @param {Object} schema Feature's schema.
- * @param {Object} configuration Current mastermail configuration.
+ * @param {Object} configuration Current notifiles configuration.
  * @param {Object} server - Parse Server instance.
  * @param {Object} servableEngineConfig - Full servableEngineConfig.
  */

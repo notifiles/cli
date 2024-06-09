@@ -3,39 +3,39 @@ export default [
         "id": "pageable",
         "name": "Pageable",
         "version": "0.0.1",
-        "description": "Adds pageing capacity to a mastermail app",
+        "description": "Adds pageing capacity to a notifiles app",
         "packages": [
             {
-                "id": "@mastermail-community/pageable-parse-server",
+                "id": "@notifiles-community/pageable-parse-server",
                 "description": "",
                 "type": "main",
                 "components": ["server"],
-                "url": "https://github.com/mastermail-community/pageable-parse-server.git"
+                "url": "https://github.com/notifiles-community/pageable-parse-server.git"
             },
             {
-                "id": "@mastermail-community/pageable-parse-classes",
+                "id": "@notifiles-community/pageable-parse-classes",
                 "description": "",
                 "type": "classes",
                 "components": ["server"]
             },
         ],
         "author": {
-            "name": "mastermail Community",
+            "name": "notifiles Community",
             "email": "servablecommunity@gmail.com",
             "url": "https://servablecommunity.com/"
         },
         "keywords": [
             "node",
             "features",
-            "mastermail",
+            "notifiles",
             "yeoman-toolbox"
         ],
         "repository": {
             "type": "git",
-            "url": "https://github.com/mastermail-community/toolbox-mastermail.git"
+            "url": "https://github.com/notifiles-community/toolbox-notifiles.git"
         },
         "bugs": {
-            "url": "https://github.com/mastermail-community/toolbox-mastermail/issues"
+            "url": "https://github.com/notifiles-community/toolbox-notifiles/issues"
         },
         "main": "./toolboxs/app/index.js",
         "homepage": "http://servablecommunity.com",
@@ -50,7 +50,7 @@ export default [
                 "name": "pageable",
                 "slug": "pg",
                 // module: {
-                //     '@mastermail-community/publishable-parse-server': '*'
+                //     '@notifiles-community/publishable-parse-server': '*'
                 // },
                 // version: '*',
                 "params": {
@@ -83,34 +83,34 @@ export default [
         "id": "emailable",
         "name": "Emailable",
         "version": "0.0.1",
-        "description": "Adds email capacity to a mastermail app",
+        "description": "Adds email capacity to a notifiles app",
         "howto": "Fill the API key",
         "packages": [
             {
-                "id": "@mastermail-community/mastermail-emailable",
+                "id": "@notifiles-community/notifiles-emailable",
                 "description": "",
                 "type": "main",
                 "components": ["server"],
-                "url": "https://github.com/mastermail-community/mastermail-emailable.git"
+                "url": "https://github.com/notifiles-community/notifiles-emailable.git"
             }
         ],
         "author": {
-            "name": "mastermail Community",
+            "name": "notifiles Community",
             "email": "servablecommunity@gmail.com",
             "url": "https://servablecommunity.com/"
         },
         "keywords": [
             "node",
             "features",
-            "mastermail",
+            "notifiles",
             "yeoman-toolbox"
         ],
         "repository": {
             "type": "git",
-            "url": "https://github.com/mastermail-community/mastermail-emailable.git"
+            "url": "https://github.com/notifiles-community/notifiles-emailable.git"
         },
         "bugs": {
-            "url": "https://github.com/mastermail-community/mastermail-emailable.git#issues"
+            "url": "https://github.com/notifiles-community/notifiles-emailable.git#issues"
         },
         "main": "./toolboxs/app/index.js",
         "homepage": "http://servablecommunity.com",
@@ -208,14 +208,14 @@ export default [
         "name": "Slugable",
         "packages": [
             {
-                "id": "@mastermail-community/slugable",
+                "id": "@notifiles-community/slugable",
                 "description": "",
                 "type": "main"
             }
         ],
-        "author": "mastermail Community",
+        "author": "notifiles Community",
         "email": "servablecommunity@gmail.com",
-        "description": "Adds slug capacity to a mastermail app",
+        "description": "Adds slug capacity to a notifiles app",
         "icon": "https://cdn3d.iconscout.com/3d/free/preview/free-toffee-4356774-3618919.png?f=avif&h=1400",
     },
     {
@@ -223,14 +223,14 @@ export default [
         "name": "Reviewable",
         "packages": [
             {
-                "id": "mastermail-reviewable",
+                "id": "notifiles-reviewable",
                 "description": "",
                 "type": "main"
             }
         ],
-        "author": "mastermail Community",
+        "author": "notifiles Community",
         "email": "servablecommunity@gmail.com",
-        "description": "Adds review capacity to a mastermail app",
+        "description": "Adds review capacity to a notifiles app",
         "icon": "https://cdn3d.iconscout.com/3d/free/preview/free-toffee-4356774-3618919.png?f=avif&h=1400",
     },
     {
@@ -238,14 +238,14 @@ export default [
         "name": "Publishable",
         "packages": [
             {
-                "id": "mastermail-publishable",
+                "id": "notifiles-publishable",
                 "description": "",
                 "type": "main"
             }
         ],
-        "author": "mastermail Community",
+        "author": "notifiles Community",
         "email": "servablecommunity@gmail.com",
-        "description": "Adds review capacity to a mastermail app",
+        "description": "Adds review capacity to a notifiles app",
         "icon": "https://cdn3d.iconscout.com/3d/free/preview/free-toffee-4356774-3618919.png?f=avif&h=1400",
     }
 ]

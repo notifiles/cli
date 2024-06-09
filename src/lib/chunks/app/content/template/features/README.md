@@ -1,1 +1,1 @@
-# Features for mastermail
+# Features for notifiles

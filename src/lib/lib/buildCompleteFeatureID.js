@@ -1,5 +1,5 @@
 
 
 export default featureId => {
-    return featureId.indexOf('mastermail-') === 0 ? `${featureId}` : `mastermail-${featureId}`
+    return featureId.indexOf('notifiles-') === 0 ? `${featureId}` : `notifiles-${featureId}`
 }

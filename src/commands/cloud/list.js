@@ -1,4 +1,4 @@
-import { cloud as cloudOps } from "@mastermail/sdk"
+import { cloud as cloudOps } from "@notifiles/sdk"
 // import { cloud as cloudOps } from "../../../../sdk/src/index.js"
 
 export default ({

@@ -1,4 +1,4 @@
-import { project } from "@mastermail/sdk"
+import { project } from "@notifiles/sdk"
 
 export default async (folder) => {
   return project.isProject({ path: folder })

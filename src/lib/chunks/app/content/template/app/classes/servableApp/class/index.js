@@ -1,4 +1,4 @@
 
-export default class ServableApp extends mastermail.App.Object {
+export default class ServableApp extends notifiles.App.Object {
 
 }
