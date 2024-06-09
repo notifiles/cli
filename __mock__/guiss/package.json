@@ -1,16 +1,9 @@
 {
-  "name": "<%= appId %>",
+  "name": "guiss",
   "version": "0.0.0",
-  "description": "<%= appDescription %>",
+  "description": "My notifiles app",
   "homepage": "",
-  <% if (locals.authorName && locals.authorEmail && locals.authorUrl) { %>
-  "author": {
-      "name": "<%= authorName %>",
-      "email": "<%= authorEmail %>",
-      "url": "<%= authorUrl %>"
-    },
-  <%
-  } %>
+  
   "files": [
     "src"
   ],
@@ -81,6 +74,5 @@
   "jest": {
     "testEnvironment": "node"
   },
-  <% if (locals.license) { %>"license": "<%= license %>"<%
-  } %>
+  "license": "MIT"
 }

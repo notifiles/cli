@@ -14,15 +14,5 @@ export default async (props = {}) => {
     }
   })
 
-  if (payload._adapter && payload._adapter.dockercompose) {
-    await CliNext.fs.writeText({
-      destination: `${destination}/lib/app/system/docker/docker-compose.yaml`,
-      text: payload._adapter.dockercompose,
-      data: {
-        ...payload,
-        appDescription: "My notifiles app",
-        maxUploadSize: '100mb',
-      }
-    })
-  }
+  return true
 }

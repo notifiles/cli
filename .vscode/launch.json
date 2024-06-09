@@ -14,10 +14,10 @@
       ],
       "program": "${workspaceFolder}/src/app.js",
       "args": [
-        "project",
+        "app",
         "new",
-        "--projectName",
-        "The Dickens in me",
+        "--appName",
+        "Guiss",
         "--destination",
         "/Users/anak/YourouNak/development/notifiles/cli/__mock__",
         // "./_archive/main",
@@ -60,7 +60,7 @@
         "add",
         "--platformId",
         "devto",
-        "--projectPath",
+        "--appPath",
         "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
         // "--platformToken",
         // "P?FPOZJEP3232"
@@ -93,47 +93,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "List platforms",
-      "stopOnEntry": false,
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "${workspaceFolder}/src/app.js",
-      "args": [
-        "platform",
-        "list",
-        "--projectPath",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
-        // "./_archive/main",
-        // //"-q"
-      ],
-      "env": {
-        "NODE_ENV": "development"
-      },
-      "envFile": "${workspaceFolder}/.env.development",
-      "runtimeArgs": [
-        // "--trace-warnings",
-        "--require=dotenv/config",
-        "--nolazy",
-        "--expose-gc",
-        "--inspect-brk",
-        "--experimental-modules",
-        "--es-module-specifier-resolution=node",
-        "--experimental-specifier-resolution=node"
-        //"--unhandled-rejections=strict"
-      ],
-      // "preLaunchTask": "tsc: build - tsconfig.json",
-      // "sourceMaps": true,
-      "smartStep": true,
-      "console": "integratedTerminal",
-      "outFiles": [
-        "${workspaceFolder}/build/**/*.js"
-      ]
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Create a new post",
+      "name": "Create a new template",
       "stopOnEntry": false,
       "skipFiles": [
         "<node_internals>/**"
@@ -142,7 +102,7 @@
       "args": [
         "post",
         "new",
-        "--postTitle",
+        "--templateName",
         "My new hobby is a genuine one",
         "--destination",
         "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
@@ -185,7 +145,7 @@
       "program": "${workspaceFolder}/src/app.js",
       "args": [
         "sync",
-        "--projectPath",
+        "--appPath",
         "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
         // "--platformToken",
         // "P?FPOZJEP3232"
@@ -227,7 +187,7 @@
       "args": [
         "cloud",
         "add",
-        "--projectPath",
+        "--appPath",
         "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
         // "--platformToken",
         // "P?FPOZJEP3232"
@@ -268,88 +228,6 @@
       "program": "${workspaceFolder}/src/app.js",
       "args": [
         "build",
-        "--destination",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
-        // "--platformToken",
-        // "P?FPOZJEP3232"
-        // "./_archive/main",
-        // //"-q"
-      ],
-      "env": {
-        "NODE_ENV": "development"
-      },
-      "envFile": "${workspaceFolder}/.env.development",
-      "runtimeArgs": [
-        // "--trace-warnings",
-        "--require=dotenv/config",
-        "--nolazy",
-        "--expose-gc",
-        "--inspect-brk",
-        "--experimental-modules",
-        "--es-module-specifier-resolution=node",
-        "--experimental-specifier-resolution=node"
-        //"--unhandled-rejections=strict"
-      ],
-      // "preLaunchTask": "tsc: build - tsconfig.json",
-      // "sourceMaps": true,
-      "smartStep": true,
-      "console": "integratedTerminal",
-      "outFiles": [
-        "${workspaceFolder}/build/**/*.js"
-      ]
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Consolidate",
-      "stopOnEntry": false,
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "${workspaceFolder}/src/app.js",
-      "args": [
-        "consolidate",
-        "--destination",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
-        // "--platformToken",
-        // "P?FPOZJEP3232"
-        // "./_archive/main",
-        // //"-q"
-      ],
-      "env": {
-        "NODE_ENV": "development"
-      },
-      "envFile": "${workspaceFolder}/.env.development",
-      "runtimeArgs": [
-        // "--trace-warnings",
-        "--require=dotenv/config",
-        "--nolazy",
-        "--expose-gc",
-        "--inspect-brk",
-        "--experimental-modules",
-        "--es-module-specifier-resolution=node",
-        "--experimental-specifier-resolution=node"
-        //"--unhandled-rejections=strict"
-      ],
-      // "preLaunchTask": "tsc: build - tsconfig.json",
-      // "sourceMaps": true,
-      "smartStep": true,
-      "console": "integratedTerminal",
-      "outFiles": [
-        "${workspaceFolder}/build/**/*.js"
-      ]
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Cloudify",
-      "stopOnEntry": false,
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "${workspaceFolder}/src/app.js",
-      "args": [
-        "cloudify",
         "--destination",
         "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
         // "--platformToken",

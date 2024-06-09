@@ -7,19 +7,19 @@ export default ({
   description: 'List project cdns',
   questions: [
     {
-      name: 'projectPath',
+      name: 'appPath',
     },
   ],
   example: "$0 cloud list",
   handler: async () => {
     await CliNext.prompt.ask([
       {
-        name: 'projectPath',
+        name: 'appPath',
       },
     ])
 
     const clouds = await cloudOps.list({
-      path: CliNext.payload.projectPath,
+      path: CliNext.payload.appPath,
     })
 
     console.log(clouds ? clouds.map(p => p.id).join(', ') : "No cloud found")

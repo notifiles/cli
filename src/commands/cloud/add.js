@@ -7,7 +7,7 @@ export default ({
   description: 'Add a cdn',
   questions: [
     {
-      name: 'projectPath',
+      name: 'appPath',
     },
     {
       name: 'cloudType',
@@ -35,7 +35,7 @@ export default ({
   handler: async () => {
     await CliNext.prompt.ask([
       {
-        name: 'projectPath',
+        name: 'appPath',
       },
       {
         name: 'cloudType',
@@ -99,7 +99,7 @@ export default ({
     }
 
     const { isValid, error } = await cloudOps.add({
-      path: CliNext.payload.projectPath,
+      path: CliNext.payload.appPath,
       cloud
     })
 

@@ -2,9 +2,9 @@
 export default ({
   _clinextType: "question",
   type: 'string',
-  message: "Choose a notifiles post",
+  message: "Choose a notifiles app",
   promptType: "file-tree-selection",
-  name: "templatePath",
+  name: "appPath",
   onlyShowDir: true,
   root: "./",
   onlyShowValid: false,
