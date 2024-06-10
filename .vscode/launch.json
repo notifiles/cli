@@ -19,7 +19,7 @@
         "--appName",
         "Guiss",
         "--destination",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock",
         // "./_archive/main",
         // //"-q"
       ],
@@ -59,12 +59,8 @@
         "app",
         "build",
         "--appPath",
-        // "/Users/anak/YourouNak/development/notifiles/sdk/__mock__/content",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/guiss",
-        // "--platformToken",
-        // "P?FPOZJEP3232"
-        // "./_archive/main",
-        // //"-q"
+        // "/Users/anak/YourouNak/development/notifiles/sdk/__mock/content",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock/guiss",
       ],
       "env": {
         "NODE_ENV": "development"
@@ -101,7 +97,7 @@
       "args": [
         "sync",
         "--appPath",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/guiss",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock/guiss",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",
@@ -145,7 +141,7 @@
         "--cloudType",
         "minio",
         "--appPath",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/guiss",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock/guiss",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",
@@ -189,7 +185,7 @@
         "--templateName",
         "My new hobby is a genuine one",
         "--appPath",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/guiss",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock/guiss",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",

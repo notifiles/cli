@@ -1,5 +1,5 @@
-// import { template } from "@notifiles/sdk"
-import { template } from "../../../../sdk/src/index.js"
+import { template } from "@notifiles/sdk"
+// import { template } from "../../../../sdk/src/index.js"
 import * as envfile from 'envfile'
 import fs from 'fs'
 

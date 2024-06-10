@@ -1,10 +1,13 @@
 import { template } from "@notifiles/sdk"
-// import { platform, post } from "../../../sdk/src/index.js"
+// import { template } from "../../../../sdk/src/index.js"
+import * as envfile from 'envfile'
+import fs from 'fs'
 
 export default ({
-  _clinextType: "command",
+  _clinextType: 'command',
   name: 'sync',
-  description: 'Sync a project',
+  position: 0,
+  description: `Sync posts`,
   questions: [
     {
       name: 'appPath',
@@ -12,32 +15,56 @@ export default ({
   ],
   example: "$0 sync",
   handler: async () => {
-
     await CliNext.prompt.ask([
       {
         name: 'appPath',
       },
     ])
 
-
-    let clouds = await CliNext.store.get({
-      key: `cloud_data`,
-    })
-
-    if (!clouds) {
-      console.log('Please add a cloud CDN host. notifiles cloud add')
-      return
-    }
-    clouds = JSON.parse(clouds)
-
     const settings = {
-      // platforms,
-      clouds
+      forceUploadAttachments: false,
+      dryRun: false
     }
 
+    const envfilePath = `${CliNext.payload.appPath}/.env`
+    let envContent = await fs.promises.readFile(envfilePath, 'utf8')
+    envContent = envfile.parse(envContent)
+
+    switch (envContent['CLOUD_TYPE']) {
+      case 'minio': {
+        settings.clouds = [{
+          id: "minio",
+          auth: {
+            endPoint: envContent['MINIO_ENDPOINT'],
+            accessKey: envContent['MINIO_ACCESS_KEY'],
+            secretKey: envContent['MINIO_SECRET'],
+            bucketName: envContent['MINIO_BUCKET_NAME']
+          }
+        },]
+        break
+      }
+      case 'bunny': {
+        settings.clouds = [{
+          id: "bunny",
+          auth: {
+            accessKey: envContent['BUNNY_ACCESS_KEY'],
+            storageZoneName: envContent['BUNNY_STORAGE_ZONE_NAME'],
+          }
+        },]
+        break
+      }
+      default: {
+        console.log(`No cloud found in env file. `)
+        return
+      }
+
+    }
+    const path = `${CliNext.payload.appPath}/src/source`
     await template.update.processPath({
-      path: CliNext.payload.appPath,
+      path,
       settings
     })
+
+    console.log(`Posts have been synced at ${CliNext.payload.destination}`)
   },
 })
