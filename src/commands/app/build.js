@@ -59,7 +59,7 @@ export default ({
       }
 
     }
-    const path = `${CliNext.payload.appPath}/src/source`
+    const path = `${CliNext.payload.appPath}/templates`
     await template.update.processPath({
       path,
       settings
