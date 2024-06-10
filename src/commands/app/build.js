@@ -1,5 +1,7 @@
-import { template } from "@notifiles/sdk"
-// import { post } from "../../../../sdk/src/index.js"
+// import { template } from "@notifiles/sdk"
+import { template } from "../../../../sdk/src/index.js"
+import * as envfile from 'envfile'
+import fs from 'fs'
 
 export default ({
   _clinextType: 'command',
@@ -8,19 +10,59 @@ export default ({
   description: `Build posts`,
   questions: [
     {
-      name: 'destination',
+      name: 'appPath',
     },
   ],
   example: "$0 build",
   handler: async () => {
     await CliNext.prompt.ask([
       {
-        name: 'destination',
+        name: 'appPath',
       },
     ])
 
-    await template.build.processPath({
-      path: CliNext.payload.destination,
+    const settings = {
+      forceUploadAttachments: false,
+      dryRun: true
+    }
+
+    const envfilePath = `${CliNext.payload.appPath}/.env`
+    let envContent = await fs.promises.readFile(envfilePath, 'utf8')
+    envContent = envfile.parse(envContent)
+
+    switch (envContent['CLOUD_TYPE']) {
+      case 'minio': {
+        settings.clouds = [{
+          id: "minio",
+          auth: {
+            endPoint: envContent['MINIO_ENDPOINT'],
+            accessKey: envContent['MINIO_ACCESS_KEY'],
+            secretKey: envContent['MINIO_SECRET'],
+            bucketName: envContent['MINIO_BUCKET_NAME']
+          }
+        },]
+        break
+      }
+      case 'bunny': {
+        settings.clouds = [{
+          id: "bunny",
+          auth: {
+            accessKey: envContent['BUNNY_ACCESS_KEY'],
+            storageZoneName: envContent['BUNNY_STORAGE_ZONE_NAME'],
+          }
+        },]
+        break
+      }
+      default: {
+        console.log(`No cloud found in env file. `)
+        return
+      }
+
+    }
+    const path = `${CliNext.payload.appPath}/src/source`
+    await template.update.processPath({
+      path,
+      settings
     })
 
     console.log(`Posts have been built at ${CliNext.payload.destination}`)

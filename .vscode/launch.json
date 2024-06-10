@@ -7,7 +7,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Create a new project",
+      "name": "Create a new app",
       "stopOnEntry": false,
       "skipFiles": [
         "<node_internals>/**"
@@ -49,19 +49,18 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Add a platform",
+      "name": "Build an app",
       "stopOnEntry": false,
       "skipFiles": [
         "<node_internals>/**"
       ],
       "program": "${workspaceFolder}/src/app.js",
       "args": [
-        "platform",
-        "add",
-        "--platformId",
-        "devto",
+        "app",
+        "build",
         "--appPath",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
+        // "/Users/anak/YourouNak/development/notifiles/sdk/__mock__/content",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/guiss",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",
@@ -93,51 +92,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Create a new template",
-      "stopOnEntry": false,
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "${workspaceFolder}/src/app.js",
-      "args": [
-        "post",
-        "new",
-        "--templateName",
-        "My new hobby is a genuine one",
-        "--destination",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
-        // "--platformToken",
-        // "P?FPOZJEP3232"
-        // "./_archive/main",
-        // //"-q"
-      ],
-      "env": {
-        "NODE_ENV": "development"
-      },
-      "envFile": "${workspaceFolder}/.env.development",
-      "runtimeArgs": [
-        // "--trace-warnings",
-        "--require=dotenv/config",
-        "--nolazy",
-        "--expose-gc",
-        "--inspect-brk",
-        "--experimental-modules",
-        "--es-module-specifier-resolution=node",
-        "--experimental-specifier-resolution=node"
-        //"--unhandled-rejections=strict"
-      ],
-      // "preLaunchTask": "tsc: build - tsconfig.json",
-      // "sourceMaps": true,
-      "smartStep": true,
-      "console": "integratedTerminal",
-      "outFiles": [
-        "${workspaceFolder}/build/**/*.js"
-      ]
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Sync",
+      "name": "Sync an app",
       "stopOnEntry": false,
       "skipFiles": [
         "<node_internals>/**"
@@ -146,7 +101,7 @@
       "args": [
         "sync",
         "--appPath",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/guiss",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",
@@ -187,8 +142,10 @@
       "args": [
         "cloud",
         "add",
+        "--cloudType",
+        "minio",
         "--appPath",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/guiss",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",
@@ -220,16 +177,19 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Build",
+      "name": "Create a new template",
       "stopOnEntry": false,
       "skipFiles": [
         "<node_internals>/**"
       ],
       "program": "${workspaceFolder}/src/app.js",
       "args": [
-        "build",
-        "--destination",
-        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/The Dickens in me",
+        "template",
+        "new",
+        "--templateName",
+        "My new hobby is a genuine one",
+        "--appPath",
+        "/Users/anak/YourouNak/development/notifiles/cli/__mock__/guiss",
         // "--platformToken",
         // "P?FPOZJEP3232"
         // "./_archive/main",

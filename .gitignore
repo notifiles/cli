@@ -26,3 +26,12 @@ _archive
 **/*/_archive
 mock
 .env.development
+__mock__
+__mock__/guiss/.env
+__mock__/guiss/package.json
+__mock__/guiss/src/lib/components/domain/footer.js
+__mock__/guiss/src/lib/components/domain/header.js
+__mock__/guiss/src/lib/components/domain/master.js
+__mock__/guiss/src/source/my-new-hobby-is-a-genuine-one/email.tsx
+__mock__/guiss/src/source/my-new-hobby-is-a-genuine-one/i18n.json
+__mock__/guiss/src/source/my-new-hobby-is-a-genuine-one/manifest.json

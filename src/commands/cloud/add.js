@@ -1,6 +1,6 @@
 // import { cloud as cloudOps } from "../../../../sdk/src/index.js"
-import { cloud as cloudOps } from "@notifiles/sdk"
-
+import * as envfile from 'envfile'
+import fs from 'fs'
 export default ({
   _clinextType: "command",
   name: 'add',
@@ -41,10 +41,10 @@ export default ({
         name: 'cloudType',
       },
     ])
+    const envfilePath = `${CliNext.payload.appPath}/.env`
+    let envContent = await fs.promises.readFile(envfilePath, 'utf8')
+    envContent = envfile.parse(envContent)
 
-    let cloud = {
-      id: CliNext.payload.cloudType,
-    }
     switch (CliNext.payload.cloudType) {
       case 'minio': {
         await CliNext.prompt.ask([
@@ -61,15 +61,10 @@ export default ({
             name: 'cloudAccessKey'
           }
         ])
-        cloud = {
-          ...cloud,
-          auth: {
-            endPoint: CliNext.payload.cloudEndPoint,
-            accessKey: CliNext.payload.cloudAccessKey,
-            secretKey: CliNext.payload.cloudSecretKey,
-            bucketName: CliNext.payload.cloudBucketName,
-          }
-        }
+        envContent['MINIO_ENDPOINT'] = CliNext.payload.cloudEndPoint
+        envContent['MINIO_ACCESS_KEY'] = CliNext.payload.cloudAccessKey
+        envContent['MINIO_SECRET'] = CliNext.payload.cloudSecretKey
+        envContent['MINIO_BUCKET_NAME'] = CliNext.payload.cloudBucketName
         break
       }
       case 'bunny': {
@@ -84,48 +79,19 @@ export default ({
             name: 'bunnyStorageZoneName',
           },
         ])
-        cloud = {
-          ...cloud,
-          auth: {
-            accessKey: CliNext.payload.cloudAccessKey,
-            storageZoneName: CliNext.payload.bunnyStorageZoneName,
-            pullZone: CliNext.payload.bunnyPullZone,
-          }
-        }
+        envContent['BUNNY_ACCESS_KEY'] = CliNext.payload.cloudAccessKey
+        envContent['BUNNY_STORAGE_ZONE_NAME'] = CliNext.payload.bunnyStorageZoneName
+        envContent['BUNNY_PULL_ZONE'] = CliNext.payload.bunnyPullZone
+
         break
       }
       default:
         return
     }
 
-    const { isValid, error } = await cloudOps.add({
-      path: CliNext.payload.appPath,
-      cloud
-    })
 
-    const storeKey = `cloud_data`
-
-    let clouds = await CliNext.store.get({ key: storeKey })
-    if (!clouds) {
-      clouds = []
-    }
-    else {
-      clouds = JSON.parse(clouds)
-    }
-
-    clouds = clouds.filter(a => a.id !== cloud.id)
-    clouds.push(cloud)
-
-    await CliNext.store.save({
-      key: storeKey,
-      value: JSON.stringify(clouds)
-    })
-
-    if (isValid) {
-      console.log(`${CliNext.payload.cloudType} has been added`)
-    }
-    else {
-      console.log(`Could not add platform: ${error.message}`)
-    }
+    envContent['CLOUD_TYPE'] = CliNext.payload.cloudType
+    await fs.promises.writeFile(envfilePath, envfile.stringify(envContent))
+    console.log(`${CliNext.payload.cloudType} has been added`)
   },
 })

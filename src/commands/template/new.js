@@ -8,7 +8,7 @@ export default ({
   description: `Create a post`,
   questions: [
     {
-      name: 'destination',
+      name: 'appPath',
     },
     {
       name: 'templateName',
@@ -22,16 +22,17 @@ export default ({
   handler: async () => {
     await CliNext.prompt.ask([
       {
-        name: 'templateName',
+        name: 'appPath',
       },
       {
-        name: 'destination',
+        name: 'templateName',
       },
     ])
 
+    const path = `${CliNext.payload.appPath}/src/source`
     await template.create({
       title: CliNext.payload.templateName,
-      path: CliNext.payload.destination,
+      path,
       force: true
     })
 

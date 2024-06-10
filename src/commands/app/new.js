@@ -50,5 +50,6 @@ export default ({
     CliNext.payload.appId = slug(CliNext.payload.appName)
     CliNext.payload.destination = `${CliNext.payload.destination}/${CliNext.payload.appId}`
     await ChunkAppContent.write()
+    console.log(`Done creating a new app.`)
   },
 })
