@@ -5,7 +5,7 @@ export default ({
   name: 'templateName',
   type: 'string',
   promptType: 'input',
-  message: 'Post title',
+  message: 'Template name',
   transformers: [
     {
       modes: ['out', 'display'],

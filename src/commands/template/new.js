@@ -36,6 +36,6 @@ export default ({
       force: true
     })
 
-    console.log(`${CliNext.payload.templateName} has been created at ${CliNext.payload.destination}`)
+    console.log(`${CliNext.payload.templateName} has been created at ${CliNext.payload.appPath}`)
   },
 })
