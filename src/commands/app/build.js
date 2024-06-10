@@ -65,6 +65,6 @@ export default ({
       settings
     })
 
-    console.log(`Posts have been built at ${CliNext.payload.destination}`)
+    console.log(`Templates have been built at ${CliNext.payload.appPath}`)
   },
 })

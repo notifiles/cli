@@ -65,6 +65,6 @@ export default ({
       settings
     })
 
-    console.log(`Posts have been synced at ${CliNext.payload.destination}`)
+    console.log(`Templates have been synced at ${CliNext.payload.appPath}`)
   },
 })

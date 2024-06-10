@@ -27,12 +27,16 @@
     "start": "node --require=dotenv/config --es-module-specifier-resolution=node --experimental-specifier-resolution=node index.js",
     "test": "yarn node --require=dotenv/config --experimental-vm-modules --experimental-specifier-resolution=node $(yarn bin jest) --config ./jest.config.json",
     "test:watch": "yarn test -- --watch",
-    "pretest": "eslint ."
+    "pretest": "eslint .",
+    "template:new": "npx notifiles template add --templateName ${templateName} --appPath .",
+    "build": "npx notifiles app build --appPath .",
+    "sync": "npx notifiles app sync --appPath .",
   },
   "devDependencies": {
     "@types/react": "18.2.33",
     "@types/react-dom": "18.2.14",
-    "@notifiles/sdk": "^1.1.4"
+    "@notifiles/sdk": "^1.1.4",
+    "notifiles": "^1"
   },
   "lint-staged": {
     "*.js": [
