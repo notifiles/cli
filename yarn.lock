@@ -1910,10 +1910,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@notifiles/sdk@^1.1.10":
-  version "1.1.10"
-  resolved "https://registry.yarnpkg.com/@notifiles/sdk/-/sdk-1.1.10.tgz#62c6c480601b6e8909b8d2b22863c932da406e42"
-  integrity sha512-PglyuqWnKZOKoOIFn6VfiCs0/GXaZaL4FaRjelSIxfzhykPyhGTK0dG2xsoHY0THu62X87juLlwuiGilnkGn2A==
+"@notifiles/sdk@^1.1.11":
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/@notifiles/sdk/-/sdk-1.1.11.tgz#f34b749cd3d42c2ed499ea1895ec8487d16471f5"
+  integrity sha512-uuWq6VGGBD4Eemm97GUkaksBguBsmHftP6o3cQGJqHOyQqj7CBBQUJHDjipKgpANK18Fq+sHxRgl0xy1+Y6+Gg==
   dependencies:
     "@microflash/remark-figure-caption" "^2.0.2"
     "@stdlib/string-replace" "^0.2.1"
