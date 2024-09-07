@@ -74,7 +74,7 @@
     "netrc": "^0.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sharp": "^0.33.4",
+    "sharp": "^0.33.5",
     "slug": "^9.1.0"
   },
   "devDependencies": {
