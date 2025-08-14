@@ -1600,6 +1600,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@lifeomic/attempt@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@lifeomic/attempt/-/attempt-3.1.0.tgz#7fc703559177b81a008b9d263e3d9a001d11d08a"
+  integrity sha512-QZqem4QuAnAyzfz+Gj5/+SLxqwCAw2qmt7732ZXodr6VDWGeYLG6w1i/vYLa55JQM9wRuBKLmXmiZ2P0LtE5rw==
+
 "@ljharb/through@^2.3.13":
   version "2.3.13"
   resolved "https://registry.yarnpkg.com/@ljharb/through/-/through-2.3.13.tgz#b7e4766e0b65aa82e529be945ab078de79874edc"
@@ -1670,11 +1675,12 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@notifiles/sdk@^1.1.17":
-  version "1.1.17"
-  resolved "https://registry.yarnpkg.com/@notifiles/sdk/-/sdk-1.1.17.tgz#42e7f543004886e12907f810a52e9ea2e44aaa7d"
-  integrity sha512-wKVw/KT1LLsKZGKgqbXn56KahMcEPkDWQmhpaebLz5XmK6579rUUpx2hUkOkLCj2ft56DOCzvxXtvhoZ/oKcEg==
+"@notifiles/sdk@^1.1.18":
+  version "1.1.18"
+  resolved "https://registry.yarnpkg.com/@notifiles/sdk/-/sdk-1.1.18.tgz#a9f30d7f325e4319db5d3140b66dc6852acf88e4"
+  integrity sha512-CWV+uYkgj/jHW+NAR4orN9ieb1p1R7CdHSc11gA7JPu2LmtN07M4UV4Ng4E0RxJADy+fQtjDGrpo+Rvq3GU7uQ==
   dependencies:
+    "@lifeomic/attempt" "^3.1.0"
     "@microflash/remark-figure-caption" "^2.0.2"
     "@stdlib/string-replace" "^0.2.1"
     axios "^1.6.1"
