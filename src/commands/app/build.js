@@ -12,6 +12,12 @@ export default ({
     {
       name: 'appPath',
     },
+    {
+      name: 'force',
+      type: 'boolean',
+      alias: 'f',
+      description: 'Force update templates (ignore cache)',
+    },
   ],
   example: "$0 build",
   handler: async () => {
@@ -62,7 +68,8 @@ export default ({
     const path = `${CliNext.payload.appPath}/templates`
     await template.update.processPath({
       path,
-      settings
+      settings,
+      force: CliNext.payload.force,
     })
 
     console.log(`Templates have been built at ${CliNext.payload.appPath}`)
