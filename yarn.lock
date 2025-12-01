@@ -1675,10 +1675,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@notifiles/sdk@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@notifiles/sdk/-/sdk-1.2.0.tgz#dd9ef8ca1811f429808df8a90631bccb3189997e"
-  integrity sha512-34WoZtoBpmE/m5BAL0sk42Lr/oppy8H2/zkDs5gsfDFCuLE+Wf4dI3pHK9e4Sidn7Zndx9PJbl8/u606fUzxRQ==
+"@notifiles/sdk@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@notifiles/sdk/-/sdk-1.3.0.tgz#288b5b1721b85eb067127164a2734a2b6bce143a"
+  integrity sha512-wbRk2equdQzf0NEgHcLtRrW2TDrUfXiiBB87tkTR40ehKNqiZuxQM+0i/aLUDRCFyAhYN9eN58jZirc5SvtrjA==
   dependencies:
     "@lifeomic/attempt" "^3.1.0"
     "@microflash/remark-figure-caption" "^2.0.2"
