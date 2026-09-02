@@ -36,6 +36,11 @@ export default ({
     let envContent = await fs.promises.readFile(envfilePath, 'utf8')
     envContent = envfile.parse(envContent)
 
+    // Without this, adaptSettings() falls back to "en_us" (underscore), which
+    // never matches an app's real i18n.json keys (e.g. "en-us") and silently
+    // injects an empty phantom locale version into every template's sync.
+    settings.defaultLocale = envContent['DEFAULT_LOCALE'] || 'en-us'
+
     switch (envContent['CLOUD_TYPE']) {
       case 'minio': {
         settings.clouds = [{
